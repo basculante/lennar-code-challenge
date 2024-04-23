@@ -1,12 +1,9 @@
-"use client";
-
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
 import Button from "@/components/button";
+import HamburgerIcon from "@/components/icons/hamburger";
+import Image from "next/image";
+import MobileMenu from "./mobile-menu";
 
-const navigation = [
+export const navigation = [
   { name: "Product", href: "#", current: false },
   { name: "Features", href: "#", current: false },
   { name: "Marketplace", href: "#", current: false },
@@ -19,19 +16,10 @@ function classNames(...classes: any) {
 
 export default function Navbar() {
   return (
-    <nav className="mx-auto px-4 sm:px-8 bg-gray-900 max-w-screen-xl">
+    <nav className="mx-auto px-4 py-4 sm:px-8 bg-gray-900 max-w-screen-xl">
       <div className="relative flex h-16 items-center justify-between">
-        <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          {/* Mobile menu button*/}
-          {/* <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-              <span className="absolute -inset-0.5" />
-              <span className="sr-only">Open main menu</span>
-              {open ? (
-                <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-              ) : (
-                <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-              )}
-            </Disclosure.Button> */}
+        <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
+          <MobileMenu />
         </div>
         <div className="flex items-center justify-center sm:items-stretch sm:justify-start">
           <div className="flex flex-shrink-0 items-center">
@@ -42,7 +30,7 @@ export default function Navbar() {
               width={40}
             />
           </div>
-          <div className="hidden sm:ml-6 sm:block">
+          <div className="hidden sm:ml-6 md:block">
             <div className="flex space-x-4">
               {navigation.map((item) => (
                 <a
@@ -63,7 +51,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="flex gap-4">
+        <div className="gap-4 hidden md:flex">
           <a
             href={"#"}
             className={
