@@ -14,3 +14,5 @@ const Input = forwardRef<
 });
 
 export default Input;
+
+Input.displayName = "Input";

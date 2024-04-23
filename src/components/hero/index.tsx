@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="flex-1 py-8 md:pt-24">
         <div className="inline-flex bg-black text-white mb-8 p-2 rounded-full items-center text-sm md:text-base">
           <div className="px-2 py-1 bg-indigo-500 rounded-full uppercase mr-2">
-            <a href="#">We're hiring</a>
+            <a href="#">We&apos;re hiring</a>
           </div>
           <div className="px-2 py-1">
             <a href="#" className="flex items-center">

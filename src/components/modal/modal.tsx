@@ -94,3 +94,5 @@ const Modal = forwardRef<HTMLElement, Props>(
 );
 
 export default Modal;
+
+Modal.displayName = "Modal";
