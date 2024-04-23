@@ -1,5 +1,7 @@
 "use server";
 
+import { createUser } from "@/lib/api";
+
 export async function submitStartFreeTrialAction(
   _:
     | {
@@ -9,19 +11,20 @@ export async function submitStartFreeTrialAction(
     | FormData
     | undefined
     | null,
-  formData:
-    | {
-        subscriptionContractId: string;
-      }
-    | undefined
+  formData: FormData
 ) {
   try {
-    if (!formData) {
-      return {
-        message: "Missing email input",
-        status: "danger",
-      };
-    }
+    const email = formData.get("email")?.toString();
+
+    if (!email) throw new Error("Email is required");
+
+    const response = await createUser({
+      name: "John Doe",
+      username: "johndoe",
+      email,
+    });
+
+    console.log("response", response);
 
     return {
       message: "Thank  you for starting your free trial.",
