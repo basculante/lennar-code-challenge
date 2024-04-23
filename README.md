@@ -1,37 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Certainly! Below is a template for a README.md file for your code challenge project:
+
+---
+
+# Next.js Hero Component & Responsive Navbar
+
+This project is a Next.js application that implements a hero component for the landing page and a responsive navbar. The project utilizes Tailwind CSS for styling, along with Headless UI components, specifically the Dialog component. Additionally, it includes a GraphQL request to a mock endpoint at [GraphQL Zero](https://graphqlzero.almansi.me/api) to trigger the `createUser` mutation.
+
+## Features
+
+- **Hero Component**: A visually appealing hero component is implemented for the landing page, showcasing key information about the application or website.
+
+- **Responsive Navbar**: The application includes a responsive navbar that adapts to different screen sizes, providing seamless navigation across devices.
+
+- **Tailwind CSS Styling**: Tailwind CSS is used for styling, providing a utility-first approach to building modern web interfaces.
+
+- **Headless UI Dialog Component**: The project utilizes the Dialog component from Headless UI for creating accessible and customizable modal dialogs.
+
+- **GraphQL Mutation**: A GraphQL mutation `createUser` is implemented to interact with the mock endpoint provided by GraphQL Zero, allowing users to trigger the creation of a new user. React-toastify is implemented on front-end to display success or error messages for the mutation.
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/): A React framework for building server-side rendered and static web applications.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for building custom designs quickly.
+- [Headless UI](https://headlessui.dev/): A set of fully accessible and customizable UI components for building robust web interfaces.
+- [GraphQL](https://graphql.org/): A query language for APIs that enables efficient data fetching.
 
 ## Getting Started
 
-First, run the development server:
+To run the project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone <repository-url>
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Navigate to the project directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   cd <repo-name>
+   ```
 
-## Learn More
+3. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# lennar-code-challenge
+Feel free to update the sections and add any additional information as needed to make it more relevant to your project.
