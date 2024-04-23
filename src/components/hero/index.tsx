@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Input from "../input/Input";
 import Button from "../button";
+import FreeTrialForm from "./free-trial-form";
 
 export default function Hero() {
   return (
@@ -44,23 +45,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <form action="" className="flex flex-col sm:flex-row gap-4 mb-4">
-          <div className="flex-1">
-            <Input placeholder="Enter your email" />
-          </div>
-          <div className="flex-0.5">
-            <Button type="submit">Start free trial</Button>
-          </div>
-        </form>
-
-        <p className="text-gray-300 text-sm">
-          Start your free 14-day trial, no credit card necessary. By providing
-          your email, you agree to our{" "}
-          <a href="#" className="font-semibold">
-            terms of service
-          </a>
-          .
-        </p>
+        <FreeTrialForm />
       </div>
       <div className="basis-full md:basis-2/5 lg:basis-1/2 md:pt-8 md:overflow-hidden">
         <Image

@@ -30,13 +30,13 @@ const Modal = forwardRef<HTMLElement, Props>(
       <Transition.Root show={open} as={Fragment}>
         <Dialog
           as="div"
-          className="relative z-10"
+          className="relative z-10 md:hidden"
           onClose={onClose}
           initialFocus={ref as React.RefObject<HTMLDivElement>}
         >
           <div className="fixed inset-0 bg-gray-500/70 transition-opacity" />
           <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div className="flex min-h-full justify-center p-4 text-center items-start">
+            <div className="flex min-h-full justify-center p-2 text-center items-start">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -46,7 +46,7 @@ const Modal = forwardRef<HTMLElement, Props>(
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-full max-w-lg">
+                <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-full">
                   {!hideCloseIconButton && (
                     <div className="absolute right-0 p-4 flex w-full justify-between">
                       <Image
@@ -62,7 +62,7 @@ const Modal = forwardRef<HTMLElement, Props>(
                       </button>
                     </div>
                   )}
-                  <div className="bg-white px-4 pb-4 pt-20 sm:p-6 sm:pb-4">
+                  <div className="bg-white px-4 pb-4 pt-20 sm:pb-4">
                     {children}
                   </div>
                   {!hideButtons && (

@@ -1,5 +1,3 @@
-import Button from "@/components/button";
-import HamburgerIcon from "@/components/icons/hamburger";
 import Image from "next/image";
 import MobileMenu from "./mobile-menu";
 
