@@ -32,11 +32,11 @@ export default function MobileMenu() {
             </a>
           ))}
         </div>
-        <div className="px-4 py-3 sm:px-6">
+        <div className="py-3 sm:px-6">
           <div className="mb-8">
             <button
               type="button"
-              className="inline-flex w-full justify-center rounded-md bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 ml-3"
+              className="inline-flex w-full justify-center rounded-md bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700"
             >
               Start free trial
             </button>
