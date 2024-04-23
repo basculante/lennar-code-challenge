@@ -39,7 +39,7 @@ const Button = forwardRef<HTMLButtonElement, Props>(
         ref={ref}
         disabled={isLoading || pending || rest.disabled}
         className={clsx(
-          "inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-transparent px-4 py-2 font-semibold disabled:pointer-events-none disabled:opacity-50",
+          "inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-transparent px-4 py-3 font-semibold disabled:pointer-events-none disabled:opacity-50",
           bgColor ? bgColor : "bg-indigo-500",
           bgHoverColor ? `hover:${bgHoverColor}` : "hover:bg-indigo-600",
           textColor ? textColor : "text-white",
